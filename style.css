@@ -1,0 +1,155 @@
+
+.fr{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index:  9999; ;
+}
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+}
+
+.ui-content {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 100px;
+}
+.up{
+    position:fixed;
+    top:calc(33vh);
+    right:20px;
+    z-index: 10000;
+}
+.down{
+    position:fixed;
+    bottom:calc(33vh);
+    right:20px;
+    z-index: 10000;
+}
+.up4{
+    position:fixed;
+    top:calc(50vh);
+    right:20px;
+    z-index: 10000;
+}
+.down1{
+    position:fixed;
+    bottom:calc(50vh);
+    right:20px;
+    z-index: 10000;
+}
+.button-container {
+    position: fixed; 
+    bottom: 100px;
+    right: 5px; 
+    display: none; 
+    border-radius:  99em;
+    background-color: #ff000000;
+}
+#scrollButton{
+    margin-left: 200px;
+    border: none;
+    border-radius:  99em;
+    background-color: #ff000000;
+    width: 50px;
+    height: 50px;
+}
+.button-container button>img{
+    width: 100%;
+}
+
+.button-container button:hover {
+    background-color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.section {
+    margin: 200px;
+}
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+    font-size: 40px;
+}
+.section p {
+    line-height: 1.6;
+    color: #ec9a9a;
+    font-size: 25px;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills ul li {
+    background: #333;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 20PX;
+}
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+.contact ul li {
+    margin: 5px 0;
+    color: #333;
+}
+footer{
+    background-color: #333;
+    height: 100px;
+    margin-top: 20px;
+}
+   .footer-menu{
+     float: right;
+     line-height: 50px;
+     
+     li{
+       float: left;
+       margin-right: 1em;
+    a{
+         font-size: 30px;
+               }
+     }
+   }
+ 

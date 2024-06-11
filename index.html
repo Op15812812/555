@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的網頁首頁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="js.js"></script>
+     <!-- 第一個頁面 -->
+     <div data-role="page" id="page1">
+        <div data-role="header"id="header">
+            <h1>共享的頁首</h1>
+            <div data-role="navbar" class="custom-nav" id="nav">
+              <ul>
+                <li><a href="#page1" class="ui-btn ui-btn-b ui-corner-all custom-nav ">Page 1</a></li>
+                <li><a href="#page2" class="ui-btn ui-btn-b ui-corner-all custom-nav "data-transition="slidefade">Page 2</a></li>
+                <li><a href="#page3" class="ui-btn ui-btn-b ui-corner-all custom-nav ">Page 3</a></li>
+              </ul>
+            </div>
+          </div>
+            <div data-role="main" class="ui-content">
+                <p>這是第一個頁面的內容。</p>
+                <img src="images/a.jpg" alt="" class="profile-pic">
+      <h1>你的名字</h1>
+
+      <div class="section">
+          <h2>基本信息</h2>
+          <p>年</p>
+          <p>职业：前端开发工程师</p>
+          <p>所在地：北京，中国</p>
+      </div>
+
+
+          <div class="section skills">
+              <h2>技能</h2>
+              <ul>
+              <li>HTML</li><br>
+              <li>CSS</li><br>
+              <li>JavaScript</li><br>
+        </ul>
+            </div>
+        </div>
+        <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down1"></a>
+        <div class="button-container" >
+          <button id="scrollButton"><img src="images/file.png" alt=""></button>
+    </div>
+
+
+       
+        <footer>
+          <ul class="footer-menu">
+            <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <div class="clearfix"></div>
+        </ul>
+        </footer>
+      </div>
+        <!-- 第二個頁面 -->
+        <div data-role="page" id="page2">
+            <div data-role="header" data-position="fixed">
+                <h1>共享的頁首</h1>
+                <div data-role="navbar">
+                  <ul>
+                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
+                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
+                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
+                  </ul>
+                </div>
+              </div>
+             <div data-role="main" class="ui-content">
+                <h2>Page 2</h2>
+                <p>This is page 2 content</p>
+                <a href="#page1" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up" ></a>
+                <a href="#page3" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down" ></a>
+            </div>
+            </div>
+        </div>
+        
+        <!-- 第三個頁面 -->
+  
+        <div data-role="page" id="page3">
+            <div data-role="header" data-position="fixed">
+                <h1>共享的頁首</h1>
+                <div data-role="navbar">
+                  <ul>
+                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
+                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
+                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            <div data-role="main" class="ui-content">
+                <p>這是第三個頁面的內容。</p>
+                <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up" ></a>
+                <a href="#page4" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down" ></a>
+            </div>
+        </div>
+        
+        <!-- 第四個頁面 -->
+        
+        <div data-role="page" id="page4">
+            <div data-role="header" data-position="fixed">
+                <h1>共享的頁首</h1>
+                <div data-role="navbar">
+                  <ul>
+                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
+                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
+                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            <div data-role="main" class="ui-content">
+                <p>這是第四個頁面的內容。</p>
+                <a href="#page3" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up4" ></a>
+            </div>
+        </div>
+    
+</body>
+</html>
