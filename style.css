@@ -102,6 +102,7 @@ h1 {
 }
 .section {
     margin: 200px;
+    display:flex;
 }
 .section h2 {
     border-bottom: 2px solid #333;
