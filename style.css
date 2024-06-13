@@ -1,34 +1,21 @@
 
+
 .fr{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #00000048;
+    padding-top:20;
+    font-size: 30px;
+}
+.nav {
+    background-color: #ffffff00;
     text-align: center;
-    z-index:  9999; ;
+    font-size: 25px;
+    color: #fd181870;
 }
-nav {
-    background-color: #666;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
+
 main {
     padding: 20px;
 }
 
-.ui-content {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin-top: 100px;
-}
 .up{
     position:fixed;
     top:calc(33vh);
@@ -82,6 +69,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+.light {
+    background-color: #fff;
+    color: #333; 
+}
+.dark {
+    background-color: #333;
+    color: #fff; 
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -90,8 +85,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -99,10 +94,27 @@ body {
 h1 {
     text-align: center;
     color: #333;
+    font-size: 45px;
 }
 .section {
-    margin: 200px;
-    display:inline-block;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+.section-a{
+    margin-left: calc(20vw);
+    width: 25%;
+}
+.section-b{
+    margin-right: calc(20vw);
+    width: 25%;
+}
+.section-c{
+    width: 100%;
+    text-align: center;
+}
+.section-d{
+    width: 10%;
 }
 .section h2 {
     border-bottom: 2px solid #333;
@@ -112,10 +124,22 @@ h1 {
 }
 .section p {
     line-height: 1.6;
-    color: #ec9a9a;
+    color: #101038;
+    font-size: 30px;
+}
+.section-c h2 {
+    border-bottom: 1px solid #2b282867;
+    padding-bottom: 5px;
+    color: #333;
+    font-size: 30px;
+}
+.section-c p {
+    line-height: 1.6;
+    color: #101038;
     font-size: 25px;
 }
 .skills ul {
+    
     list-style: none;
     padding: 0;
 }
@@ -139,18 +163,32 @@ h1 {
 footer{
     background-color: #333;
     height: 100px;
-    margin-top: 20px;
+    width: 100%;
 }
-   .footer-menu{
+.footer-menu{
      float: right;
-     line-height: 50px;
-     
      li{
        float: left;
-       margin-right: 0.5em;
+       margin-right: 1em;
     a{
          font-size: 26px;
                }
      }
    }
- 
+.footer-text{
+    float: left;
+    font-size:16;
+    color: #fff;
+  }
+ .setting{
+    background-color: #10103800;
+     box-shadow: none; 
+     border: 0cap;
+     text-align: center;
+     width: 20px;
+     height: 20px;
+ }
+.ui-content{
+    height: calc(100vw);
+    background-color: #ffffff;
+}

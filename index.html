@@ -4,55 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="page3.css">
+    
 </head>
 
 <body>
       <script src="js.js"></script>
      <!-- 第一個頁面 -->
      <div data-role="page" id="page1">
-        <div data-role="header"id="header">
-            <h1>共享的頁首</h1>
-            <div data-role="navbar" class="custom-nav" id="nav">
+        <div data-role="header" id="header" class="fr">
+
+            <h1>自我介紹</h1>
+            <div data-role="navbar" class="nav" id="nav">
               <ul>
-                <li><a href="#page1" class="ui-btn ui-btn-b ui-corner-all custom-nav ">Page 1</a></li>
-                <li><a href="#page2" class="ui-btn ui-btn-b ui-corner-all custom-nav "data-transition="slidefade">Page 2</a></li>
-                <li><a href="#page3" class="ui-btn ui-btn-b ui-corner-all custom-nav ">Page 3</a></li>
+                <li><a href="#page1" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">首頁</a></li>
+                <li><a href="#page2" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">家鄉</a></li>
+                <li><a href="#page3" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">興趣</a></li>
               </ul>
             </div>
           </div>
-            <div data-role="main" class="ui-content">
-                <img src="images/a.jpg" alt="" class="profile-pic">
-      <h1>你的名字</h1>
-
+      <div data-role="main" class="light "id="co">
+                <img src="images/a.jpg" alt="" class="profile-pic" id="pic">
+      <h1>晁竣楷</h1>
       <div class="section">
-          <h2>基本信息</h2>
-          <p>年</p>
-          <p>职业：前端开发工程师</p>
-          <p>所在地：北京，中国</p>
-          <div class="section skills">
-              <h2>技能</h2>
-              <ul>
+        <div class="section-a"> 
+            <h2>基本信息</h2>
+            <p>年齡:17</p>
+            <p>家鄉:桃園</p>
+        </div>
+        <div class="section-d">
+            <p>
+        </div>
+        <div class="skills section-b">
+            <h2>技能</h2>
+            <ul>
               <li>HTML</li><br>
               <li>CSS</li><br>
               <li>JavaScript</li><br>
-        </ul>
+          </ul>
         </div>
-        <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down1"></a>
-        <div class="button-container" >
-          <button id="scrollButton"><img src="images/file.png" alt=""></button>
+      </div>
+      <div class="section-c"> 
+        <h2>聯絡方式</h2>
+        <p>手機:0916780596</p>
+        <p>email:123mm123mm123mm123mm123mm@gmail.com</p>
+      </div>
     </div>
+      <footer>
+        <p class="footer-text">&copy; 2024  All Rights Reserved.</p>
+      <ul class="footer-menu">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    </footer>
+    <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down1"></a>
+
+    </div>
+    <div class="button-container" >
+      <button id="scrollButton"><img src="images/file.png" alt=""></button>
+  </div>
 
 
-       
-        <footer>
-          <ul class="footer-menu">
-            <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
-            <li></li>
+        <!-- 第二個頁面 -->
+        <div data-role="page" id="page2">
+          <div data-role="header"id="header" class="fr">
+              <h1>自我介紹</h1>
+              <div data-role="navbar" class="nav" id="nav">
+                <ul>
+                  <li><a href="#page1" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">首頁</a></li>
+                  <li><a href="#page2" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">家鄉</a></li>
+                  <li><a href="#page3" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">興趣</a></li>
+                </ul>
+              </div>
+            </div>
+            
+             <div data-role="main" class="ui-content">
+              <div class="container" id="oo">
+                <div class="slides">
+                    <div class="slide"><img src="images/1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="images/2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="images/3.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="images/4.jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="images/5.jpg" alt="Slide 5"></div>
+                    <div class="slide"><img src="images/6.jpg" alt="Slide 6"></div>
+                    <div class="slide"><img src="images/7.jpg" alt="Slide 7"></div>
+                    <div class="slide"><img src="images/8.jpg" alt="Slide 8"></div>
+                </div>
+                <div class="buttons">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
+                <div class="size-buttons">
+                  <button id="small">小</button>
+                  <button id="medium">中</button>
+                  <button id="large">大</button>
+              </div>
+            </div>
+            <div class="container fo">
+              <h1>選擇景點查看信息</h1>
+              <select id="places">
+                  <option value="">請選擇一個景點</option>
+                  <option value="airport">桃園機場</option>
+                  <option value="fish">竹圍漁港</option>
+                  <option value="Xpark">Xpark 水族館</option>
+                  <option value="street">大溪老街</option>   
+                  <option value="luwei">南興落羽松森林</option>
+                  <option value="reservoir">石門水庫</option>
+                  <option value="sky">小烏來天空步道</option>
+                  <option value="mon">虎頭山環保公園</option>
+              </select>
+          
+              <div id="airport" class="info">
+                  <h2>桃園機場</h2>
+                  <img src="images/1.jpg" alt="桃園機場" style="width: 50%; border-radius: 20%;">
+                  <p>桃園國際機場是台灣最大的機場，提供多種國際和國內航班服務。</p>
+              </div>
+              <div id="fish" class="info">
+                <h2>竹圍漁港</h2>
+                <img src="images/2.jpg" alt="竹圍漁港" style="width: 50%; border-radius: 20%;">
+                <p>竹圍漁港早期是對外的貿易港口，現今已成為觀光漁港，距離桃園國際機場僅3公里。港內設有漁貨直銷中心，一樓為海鮮銷售攤位，新鮮漁獲或加工醃漬品樣樣俱全，二樓則是熟食攤位與小吃。漁港北邊入口，有一座彩虹橋，採用紐爾遜鋼拱橋建造，是竹圍漁港的一大地標，在此眺望海天一色的美景，黃昏時分晚霞相伴更是美麗浪漫。</p>
+              </div>
+              <div id="Xpark" class="info">
+                <h2>Xpark 水族館</h2>
+                <img src="images/3.jpg" alt="Xpark" style="width: 50%; border-radius: 20%;">
+                <p>為台灣首座「都會型水生公園」有地球上各種不同共300種、30,000隻以上的水生、陸生動物在此棲息。
+                </p>
+              </div>
+              <div id="street" class="info">
+                <h2>大溪老街</h2>
+                <img src="images/4.jpg" alt="大溪老街" style="width: 50%; border-radius: 20%;">
+                <p>大溪是桃園最早發展的地方，透過大漢溪小帆船行駛淡水河，與大陸貿易興盛，造就了許多商號與商賈。日治大正時代流行巴洛克建築風格，和平路、中山路等老街，各商號融合巴洛克式繁飾主義和閩南傳統裝飾圖案，包括希臘山頭、羅馬柱子和中式的魚、蝙蝠等祈求吉慶的圖案混合，形成一種大溪專有的特色。</p>
+              </div>
+              <div id="luwei" class="info">
+                  <h2>南興落羽松森林</h2>
+                  <img src="images/5.jpg" alt="八德落羽松" style="width: 50%; border-radius: 20%;">
+                  <p>「南興落羽松森林」原為八德落羽松森林，佔地三公頃、種植3000棵落羽松相當壯觀，每年約12月至1月，落羽松逐漸由綠轉黃再轉紅</p>
+              </div>
+              <div id="reservoir" class="info">
+                <h2>石門水庫</h2>
+                <img src="images/6.jpg" alt="石門水庫" style="width: 50%; border-radius: 20%;">
+                <p>石門水庫曾經是遠東地區最大的水庫，採土石堤岸型壩體，攔截大漢溪溪水蓄水而成，是台灣第一座多功能水庫。</p>
+              </div>
+              <div id="sky" class="info">
+                <h2>小烏來天空步道</h2>
+                <img src="images/7.jpg" alt="小烏來天空步道" style="width: 50%; border-radius: 20%;">
+                <p>小烏來天空步道位於桃園市復興區，懸掛於小烏來瀑布上方，為了實現旅客漫步在雲端的夢想，桃園市政府耗資新台幣800萬元打造此座天空步道，後來更被民眾票選為全台最浪漫景點。</p>
+              </div>
+              <div id="mon" class="info">
+                <h2>虎頭山環保公園</h2>
+                <img src="images/8.jpg" alt="虎頭山環保公園" style="width: 50%; border-radius: 20%;">
+                <p>虎頭山環保公園原為桃園市垃圾掩埋場，在2002年重新規劃之後，如今搖身一變成為市郊親綠賞景好去處，更有著星星公園的美名。</p>
+              </div>
+          </div>
+          </div>
+
+          <a href="#page1" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up" ></a>
+          <a href="#page3" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down" ></a>
+          <footer>
+            <p class="footer-text">&copy; 2024  All Rights Reserved.</p>
+            <ul class="footer-menu">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -60,66 +180,172 @@
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         </ul>
         </footer>
-      </div>
-        <!-- 第二個頁面 -->
-        <div data-role="page" id="page2">
-            <div data-role="header" data-position="fixed">
-                <h1>共享的頁首</h1>
-                <div data-role="navbar">
-                  <ul>
-                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
-                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
-                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
-                  </ul>
-                </div>
-              </div>
-             <div data-role="main" class="ui-content">
-                <h2>Page 2</h2>
-                <p>This is page 2 content</p>
-                <a href="#page1" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up" ></a>
-                <a href="#page3" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down" ></a>
-            </div>
-            </div>
         </div>
+        <div class="button-container" >
+          <button id="scrollButton2"><img src="images/file.png" alt=""></button>
+        </div>
+  
+        
         
         <!-- 第三個頁面 -->
   
         <div data-role="page" id="page3">
-            <div data-role="header" data-position="fixed">
-                <h1>共享的頁首</h1>
-                <div data-role="navbar">
-                  <ul>
-                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
-                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
-                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
-                  </ul>
-                </div>
+          <div data-role="header"id="header" class="fr">
+              <h1>自我介紹</h1>
+              <div data-role="navbar" class="nav" id="nav">
+                <ul>
+                  <li><a href="#page1" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">首頁</a></li>
+                  <li><a href="#page2" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">家鄉</a></li>
+                  <li><a href="#page3" class="ui-btn ui-btn-b ui-corner-all"data-transition="slidefade">興趣</a></li>
+                </ul>
               </div>
+            </div>
             <div data-role="main" class="ui-content">
-                <p>這是第三個頁面的內容。</p>
-                <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up" ></a>
-                <a href="#page4" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-d ui-corner-all down" ></a>
+              <div class="table">
+                <div class="v"><h1>遊戲</h1></div>
+                <div class="cell" data-target="#modal1">
+                    <div class="content">
+                        <h3>手遊</h3>
+                        <p>生活可以方便帶著走，到哪都可以玩，日常中接觸最多的遊戲類型</p>
+                        <img src="images/aa.jpg" alt="ph">
+                    </div>
+                </div>
+                <div class="cell" data-target="#modal2">
+                    <div class="content">
+                        <h3>PC遊戲</h3>
+                        <p>可以跟朋友玩得聯機遊戲或自己玩得單機遊戲</p>
+                        <br>
+                        <img src="images/ab.jpg" alt="PC">
+                    </div>
+                </div>
+                <div class="cell" data-target="#modal3">
+                    <div class="content">
+                        <h3>Switch</h3>
+                        <p>由於畫質太爛不常玩，但遊戲質量都不錯</p>
+                        <br>
+                        <img src="images/ac.jpg" alt="Switch">
+                    </div>
+                </div>
+                <div class="v">
+                  <h1>其他興趣</h1>
+                </div>
+                <div class="cell" data-target="#modal4">
+                    <div class="content">
+                        <h3>聽音樂</h3>
+                        <p>打遊戲或讀書的時候聽聽歌放鬆</p>
+                        <img src="images/ad.jpg" alt="music">
+                    </div>
+                </div>
+                <div class="cell" data-target="#modal5">
+                    <div class="content">
+                        <h3>吃吃喝喝</h3>
+                        <p>人生在世，當然要走到哪吃到哪，品嚐各地美食</p>
+                        <img src="images/ae.png" alt="eat">
+                    </div>
+                </div>
+                <div class="cell" data-target="#modal6">
+                    <div class="content">
+                        <h3>傳幹圖給別人</h3>
+                        <p>如圖</p>
+                        <img src="images/af.gif" alt="gan" style="width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <a href="#page2" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up4" ></a>
+            
+        </div>
+        
+        <!-- 弹窗内容 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>登入天數最多的遊戲</p>
+                <h2>神魔之塔</h2>
+                <img src="images/12.jpg" alt="桃園機場">
+                <p>遊戲時長最久的遊戲</p>
+                <h2>原神</h2>
+                <img src="images/14.jpg" alt="桃園機場">
+                <p>輕鬆愉快好遊戲</p>
+                <h2>崩壞:星穹鐵道</h2>
+                <img src="images/13.png" alt="桃園機場">
             </div>
         </div>
         
-        <!-- 第四個頁面 -->
-        
-        <div data-role="page" id="page4">
-            <div data-role="header" data-position="fixed">
-                <h1>共享的頁首</h1>
-                <div data-role="navbar">
-                  <ul>
-                    <li><a href="#page1" class="ui-btn ui-btn-b">Page 1</a></li>
-                    <li><a href="#page2" class="ui-btn ui-btn-b">Page 2</a></li>
-                    <li><a href="#page3" class="ui-btn ui-btn-b">Page 3</a></li>
-                  </ul>
-                </div>
-              </div>
-            <div data-role="main" class="ui-content">
-                <p>這是第四個頁面的內容。</p>
-                <a href="#page3" class="ui-btn ui-btn-a ui-btn-icon-notext  ui-icon-carat-u ui-corner-all up4" ></a>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>慣老闆模擬器</p>
+                <h2>幻獸帕魯</h2>
+                <img src="images/Palworld.jpg" alt="pal">
+                <p>非常好遊戲，可惜外掛太多</p>
+                <h2>Apex</h2>
+                <img src="images/Apex_legends_logo.jpg" alt="AP" style="width: 300px;">
             </div>
         </div>
+        
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>頂</p>
+                <h2>薩爾達傳說 曠野之息</h2>
+                <img src="images/sa.jpg" alt="sa" style="width: 300px;">
+                <p>孵蛋模擬器</p>
+                <h2>寶可夢系列</h2>
+                <img src="images/po.jpg" alt="po" style="width: 300px;">
+            </div>
+        </div>
+        
+        
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>常聽音樂</p>
+                <h2>something just like this</h2>
+                <audio src="1.m4a" controls></audio>
+                <h2>Spirits</h2>
+                <audio src="2.m4a" controls></audio>
+                <h2>不眠之夜</h2>
+                <audio src="3.m4a" controls></audio>
+            </div>
+        </div>
+        
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>不知道要放甚麼，放個全雞便當壓壓驚</p>
+            <h2>160的全雞便當</h2>
+            <img src="images/IMG_1953.jpg" alt="sa" style="width: 300px;">
+            <h2>菜單</h2>
+            <img src="images/IMG_1954.jpg" alt="sa" style="width: 300px;">
+        </div>
+        </div>
+        
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>幹圖</h2>
+                <img src="images/25.jpg" style="width: 300px;">
+                <img src="images/26.jpg" style="width: 300px;">
+                <img src="images/27.jpg" style="width: 300px;">
+            </div>
+        </div>
+        <footer>
+          <p class="footer-text">&copy; 2024  All Rights Reserved.</p>
+          <ul class="footer-menu">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      </footer>
+      </div>
+        <div class="button-container" >
+          <button id="scrollButton3"><img src="images/file.png" alt=""></button>
+        </div>
+ 
+
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

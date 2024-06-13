@@ -1,0 +1,75 @@
+.container {
+    max-width: 60%;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.container p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #007bffce;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;  
+    justify-content: center;
+
+}
+.slide>img {
+    justify-content: center;
+    width: calc(60vw);
+    height: auto;
+}
+.buttons {
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.info {
+    display: none;
+}
+#scrollButton2{
+    margin-left: 200px;
+    border: none;
+    border-radius:  99em;
+    background-color: #ff000000;
+    width: 50px;
+    height: 50px;
+}
+.size-buttons {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;    
+    display: flex;
+    
+    
+}
+.size-buttons button {
+    width: 20%;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+

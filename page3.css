@@ -1,0 +1,94 @@
+.table {
+    margin-top: calc(15vh);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.table .cell {
+    width: 25%;
+    margin-left: 25px;
+    margin-right:25px ;
+    margin-bottom: calc(30vh);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.table .cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+.table .cell .content {
+    padding: 15px;
+}
+.table .cell h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.table .cell p {
+    margin: 0;
+    color: #666;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.modal-content {
+  
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+.modal-content >img{
+    justify-content: center;
+    display: flex;
+}
+.modal-content p{
+    justify-content: center;
+    display: flex;
+    color: #181313;
+    font-weight: 700;
+    font-size: 40px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.v{
+    width: 100%;
+}
+.zoomed {
+    transform: scale(2.0);
+}
+#scrollButton3{
+    margin-left: 200px;
+    border: none;
+    border-radius:  99em;
+    background-color: #ff000000;
+    width: 50px;
+    height: 50px;
+}
