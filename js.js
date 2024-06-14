@@ -1,71 +1,62 @@
 $(document).ready(function() {
+    // 當頁面滾動時顯示或隱藏按鈕
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
-            // 滚动距离大于100px时显示按钮
+            // 滾動距離大於100px時顯示按鈕
             $('#scrollButton').parent().fadeIn();
         } else {
-            // 滚动距离小于等于100px时隐藏按钮
+            // 滾動距離小於等於100px時隱藏按鈕
             $('#scrollButton').parent().fadeOut();
         }
     });
 
+    // 點擊按鈕時平滑滾動到頁面頂部
     $('#scrollButton').click(function() {
-        // 平滑滚动到页面顶部
         $('html, body').animate({scrollTop: 0}, 'slow');
     });
-});
 
-$(document).ready(function() {
+    // 針對另外一個滾動按鈕的同樣功能
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
-            // 滚动距离大于100px时显示按钮
             $('#scrollButton2').parent().fadeIn();
         } else {
-            // 滚动距离小于等于100px时隐藏按钮
             $('#scrollButton2').parent().fadeOut();
         }
     });
 
     $('#scrollButton2').click(function() {
-        // 平滑滚动到页面顶部
         $('html, body').animate({scrollTop: 0}, 'slow');
     });
-});
-$(document).ready(function() {
+
+    // 針對第三個滾動按鈕的同樣功能
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
-            // 滚动距离大于100px时显示按钮
             $('#scrollButton3').parent().fadeIn();
         } else {
-            // 滚动距离小于等于100px时隐藏按钮
             $('#scrollButton3').parent().fadeOut();
         }
     });
 
     $('#scrollButton3').click(function() {
-        // 平滑滚动到页面顶部
         $('html, body').animate({scrollTop: 0}, 'slow');
     });
-});
 
-
-$(document).ready(function() {
+    // 點擊圖片時切換圖片
     const myImage = $('#pic');
-    const images = ["images/a.jpg", "images/b.gif","images/c.gif", "images/d.gif"];
+    const images = ["images/a.jpg", "images/b.gif", "images/c.gif", "images/d.gif"];
     let x = 0;
 
     myImage.click(function() {
         x = (x + 1) % images.length;
         const ne = images[x];
-            const $this = $(this);
+        const $this = $(this);
 
-            $this.fadeOut(100, function() {
-                $this.attr('src', ne).fadeIn(100);
-            });
+        $this.fadeOut(100, function() {
+            $this.attr('src', ne).fadeIn(100);
+        });
     });
-});
 
-$(document).ready(function() {
+    // 幻燈片自動播放功能
     var currentIndex = 0;
     var slides = $('.slide');
     var totalSlides = slides.length;
@@ -90,60 +81,55 @@ $(document).ready(function() {
         showSlide(currentIndex - 1);
     });
 
-    // 自动播放功能
+    // 每5秒自動切換幻燈片
     setInterval(function() {
         showSlide(currentIndex + 1);
-    }, 5000); // 每3秒切换一次
-});
+    }, 5000);
 
-$(document).ready(function() {
+    // 選擇景點顯示對應的信息
     $('#places').change(function() {
-        $('.info').hide(); // 隐藏所有信息
+        $('.info').hide(); // 隱藏所有信息
         var selectedValue = $(this).val();
         if (selectedValue) {
-            $('#' + selectedValue).show(); // 显示所选景点的信息
+            $('#' + selectedValue).show(); // 顯示所選景點的信息
         }
     });
     
+    // 改變幻燈片圖片大小
     $('#small').click(function() {
-        $('.slide > img').css('width','50%');
-        $('.slides').css('margin-left','375px');
+        $('.slide > img').css('width', '50%');
+        $('.slides').css('margin-left', '375px');
     });
-    
+
     $('#medium').click(function() {
-        $('.slide > img').css('width','75%');
-        $('.slides').css('margin-left','225px');
+        $('.slide > img').css('width', '75%');
+        $('.slides').css('margin-left', '225px');
     });
-    
+
     $('#large').click(function() {
-        $('.slide > img').css('width','100%');
-        $('.slides').css('margin-left','0px');
+        $('.slide > img').css('width', '100%');
+        $('.slides').css('margin-left', '0px');
     });
-});
 
-
-
-  $(document).ready(function() {
-    // 打开弹窗
+    // 點擊單元格顯示彈窗
     $('.cell').click(function() {
         var modalId = $(this).data('target');
         $(modalId).css('display', 'block');
     });
 
-    // 关闭弹窗
+    // 點擊關閉按鈕關閉彈窗
     $('.close').click(function() {
         $(this).closest('.modal').css('display', 'none');
     });
 
-    // 点击窗口外部关闭弹窗
+    // 點擊窗口外部關閉彈窗
     $(window).click(function(event) {
         if ($(event.target).hasClass('modal')) {
             $('.modal').css('display', 'none');
         }
     });
-});
 
-$(document).ready(function() {
+    // 移到單元格時改變位置
     $('.cell').hover(
         function() {
             $(this).css('transform', 'translateX(10px)');
@@ -151,9 +137,8 @@ $(document).ready(function() {
             $(this).css('transform', 'translateX(0)');
         }
     );
-});
 
-$(document).ready(function() {
+    // 移到圖片上時放大圖片
     $('.modal-content>img').hover(
         function() {
             $(this).addClass('zoomed');

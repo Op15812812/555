@@ -12,10 +12,6 @@
     color: #fd181870;
 }
 
-main {
-    padding: 20px;
-}
-
 .up{
     position:fixed;
     top:calc(33vh);
